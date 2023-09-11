@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar{
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+}
+
+.Navbar .logo{
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 60%;
+    height: 100%;
+}
+
+.nav-links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: border-bottom 0.2s;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a:hover{
+    border-bottom: 3px solid red;
+}
+
+.right-box{
+    width: 35%;
+    height: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-box .container{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.right-box .search,.bell{
+    width: 7vh;
+    height: 100%;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-box .search, .bell i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.right-box .account{
+    width: 6vh;
+    height: 6vh;
+    margin-right: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right-box .account img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
