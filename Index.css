@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(21, 21, 21);
+}
+
 .Navbar{
     width: 100%;
     height: 7vh;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(21, 21, 21);
     display: flex;
 }
 
@@ -38,12 +42,13 @@
     font-weight: 600;
     font-family:Arial, Helvetica, sans-serif;
     transition: border-bottom 0.2s;
-    color: white;
+    color: rgb(173, 171, 171);
     cursor: pointer;
 }
 
 .nav-links a:hover{
     border-bottom: 3px solid red;
+    color: rgb(235, 229, 229);
 }
 
 .right-box{
@@ -78,8 +83,8 @@
 }
 
 .right-box .account{
-    width: 6vh;
-    height: 6vh;
+    width: 4vh;
+    height: 4vh;
     margin-right: 8px;
     border-radius: 50%;
     display: flex;
@@ -92,4 +97,62 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+
+/*main-movie*/
+.main-movie{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.container-two{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-movie img{
+    width: 100%;
+    height: 100%;
+}
+
+.details{
+    width: 50%;
+    height: 60%;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 0;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.details .movie-title{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(61, 161, 151);
+}
+
+.details .rating{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(87, 151, 145);
+}
+
+.details .dec{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(57, 95, 91);
+}
+
+.details .movie-btns{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(23, 69, 65);
 }
