@@ -20,6 +20,8 @@ body{
     height: 7vh;
     background-color: rgb(21, 21, 21);
     display: flex;
+    z-index: 1;
+    position: fixed;
 }
 
 .Navbar .logo{
@@ -99,6 +101,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-left: 10px;
 }
 
 .right-box .account img{
@@ -133,7 +136,6 @@ body{
 .details{
     width: 50%;
     height: 50%;
-    /* background-color: yellowgreen; */
     position: absolute;
     left: 0;
     margin-top: 20vh;
@@ -145,7 +147,6 @@ body{
 .details .movie-title{
     width: 100%;
     height: 25%;
-    /* background-color: rgb(61, 161, 151); */
     display: flex;
     align-items: center;
 }
@@ -159,7 +160,6 @@ body{
 .details .rating{
     width: 100%;
     height: 10%;
-    /* background-color: rgb(87, 151, 145); */
     display: flex;
     align-items: center;
 }
@@ -194,7 +194,6 @@ body{
 .details .desc{
     width: 70%;
     height: 30%;
-    /* background-color: rgb(57, 95, 91); */
     display: flex;
     color: white;
     align-items: center;
@@ -210,7 +209,6 @@ body{
 .details .movie-btns{
     width: 100%;
     height: 25%;
-    /* background-color: rgb(23, 69, 65); */
     display: flex;
     align-items: center;
 }
@@ -242,17 +240,17 @@ body{
 .scrollers{
     width: 100%;
     height: auto;
-    margin-top: -100px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -60px;
 }
 
 .scroller-box{
     width: 90%;
-    height: 28vh;
+    height: 25vh;
     margin-top: 5px;
     display: flex;
     flex-direction: column;
@@ -275,18 +273,29 @@ body{
 .scroller-box .content{
     width: 100%;
     height: 85%;
-    overflow-x: scroll;
+    overflow-x: scroll; 
     display: flex;
     align-items: center;
 }
 
 .content .video{
     flex: 0 0 auto;
-    width: 38vh;
+    width: 33vh;
     height: 99%;
     border: 1px solid black;
     display: flex;
     margin-left: 3px;
+    cursor: pointer;
+}
+
+.content .first-row-video{
+    flex: 0 0 auto;
+    width: 22vh;
+    height: 99%;
+    border: 1px solid black;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .video img{
@@ -294,9 +303,12 @@ body{
     height: 100%;
 }
 
-.video:hover .video-details{
-
+.first-row-video img{
+    width: 100%;
+    height: 100%;
 }
+
+/*footer*/
 
 .footer{
     width: 100%;
