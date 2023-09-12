@@ -7,6 +7,14 @@ body{
     background-color: rgb(21, 21, 21);
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .Navbar{
     width: 100%;
     height: 7vh;
@@ -227,4 +235,86 @@ body{
 }
 .mylist{
     background-color: rgb(110, 110, 110);
+}
+
+/*scroller*/
+
+.scrollers{
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroller-box{
+    width: 90%;
+    height: 28vh;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroller-box .head{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.head h3{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.scroller-box .content{
+    width: 100%;
+    height: 85%;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+}
+
+.content .video{
+    flex: 0 0 auto;
+    width: 38vh;
+    height: 99%;
+    border: 1px solid black;
+    display: flex;
+    margin-left: 3px;
+}
+
+.video img{
+    width: 100%;
+    height: 100%;
+}
+
+.video:hover .video-details{
+
+}
+
+.footer{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h5{
+    font-size: 14px;
+    color: rgb(163, 159, 159);
+}
+
+.footer h5 .name , .text{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer h5 .name{
+    color:rgb(252, 12, 12);
 }
